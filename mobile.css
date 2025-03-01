@@ -1,0 +1,57 @@
+/* Общие стили для мобильных */
+body {
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    padding: 10px;
+}
+
+/* Уменьшаем размеры блока товара */
+.tovar {
+    flex-direction: column; /* Изображение сверху, описание снизу */
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* Изображение товара */
+.tovar-image {
+    width: 100%;
+    padding-right: 0;
+    text-align: center; /* Центрируем изображение */
+}
+
+.tovar-image img {
+    width: 80%; /* Делаем картинку меньше */
+}
+
+/* Описание товара */
+.product-details {
+    width: 100%;
+    padding-left: 0;
+    text-align: center; /* Выравниваем текст по центру */
+}
+
+/* Описание товара - список */
+.product-details ul {
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Кнопка */
+.product-details button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Корзина */
+#cartItems div {
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Описание товара */
+.product-description {
+    max-width: 100%;
+    padding: 10px;
+    text-align: justify;
+}
