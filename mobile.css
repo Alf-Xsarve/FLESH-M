@@ -65,11 +65,10 @@ body {
 }
 
 /* Медиа-запросы для мобильных (экраны меньше 768px) */
-* Медиа-запросы для мобильных (экраны меньше 768px) */
 @media screen and (max-width: 768px) {
     html, body {
-    overflow-x: hidden;
-    width: 100%;
+        overflow-x: hidden;
+        width: 100%;
     }
     body {
         font-size: 12px;
