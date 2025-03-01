@@ -89,4 +89,29 @@ body {
         width: 95%;
         font-size: 12px;
     }
+    .dynamic-section {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #444;
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        border-radius: 15px;
+        padding: 20px;
+    }
+    .logo {
+        font-size: 17px;
+        font-weight: bold;
+    }
+    .search-bar {
+        flex-grow: 1;
+        margin: 0 20px;
+        padding: 3px;
+        border-radius: 3px;
+        border: none;
+    }
 }
