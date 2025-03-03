@@ -59,7 +59,7 @@ window.onload = updateCartIcon;
 // Пример товаров, добавленных в корзину
 var cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-// Функция для отображения товаров в корзине
+
 // Функция для отображения товаров в корзине
 function renderCart() {
     const cartItemsContainer = document.getElementById('cartItems');
@@ -69,7 +69,7 @@ function renderCart() {
     cart.forEach((item, index) => {
         const itemElement = document.createElement('div');
         itemElement.classList.add('cart-item');
-        
+
         // Проверяем корректность данных перед вставкой
         const itemPrice = item.price ? item.price : 0; // Если price не существует, ставим 0
 
@@ -81,11 +81,14 @@ function renderCart() {
                 <p>Количество: <span id="quantity-${index}">${item.quantity}</span></p>
             </div>
             <div class="cart-item-actions">
-                <button onclick="updateQuantity(${index}, -1)">-</button>
-                <button onclick="updateQuantity(${index}, 1)">+</button>
-                <button onclick="removeItem(${index})">Удалить</button>
+                <div class="quantity-container">
+                    <button class="quantity-btn" onclick="updateQuantity(${index}, -1)">-</button>
+                    <button class="quantity-btn" onclick="updateQuantity(${index}, 1)">+</button>
+                </div>
+                <button class="delete-btn" onclick="removeItem(${index})">Удалить</button>
             </div>
-        `;
+`;
+
 
         cartItemsContainer.appendChild(itemElement);
         totalPrice += itemPrice * item.quantity;
